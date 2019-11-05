@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Home</title>
+ <link rel="stylesheet" type="text/css" href="stylee.css">
+ <style>
+     .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:black;
+   
+}
+
+    .button {
+      background-color: #1c87c9;
+      border: none;
+      color: white;
+      padding: 10px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 4px 2px;
+      cursor: pointer;
+      }
+      .buttonn{
+      background-color: black;
+      border: 1px solid white;
+      color: white;
+      padding: 5px 5px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 4px 2px;
+      cursor: pointer;
+      width: 110px;
+      }
+      .card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 60%;
+  margin-left: 250px;
+  display: flex;
+}
+
+.container {
+  padding: 0px 10px;
+  
+  
+}
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  font-size: 18px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+ flex:60%;
+  padding: 15px;
+  height: 400px; /* Should be removed. Only for demonstration */
+  width: 200px;
+}
+.cardd {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 95%;
+  margin-left: 25px;
+  display: flex;
+}
+ </style>
+</head>
+<body>
+<a href="Home.html">
+  <img src="icon.png" >
+</a>
+<ul>
+ <li><a href="Home.html">Home</a></li>
+ <li><a href="About Us.html">About Us</a>  
+
+<li><a href="contact.html">Contact Us</a></li>
+<li><a href="doctorlogin.html" class="buttonn">Sign In</a></li>
+ <li><a href="getstarted.html" class="button">Book Now</a></li>
+  </li>
+</ul>
+<br><br>
+
+<div class="container">
+    <div class="mySlides">
+      <div class="numbertext"> 1/2</div>
+      <img src="3.jpg" style="width:1400px;height: 530px;">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext"> 2/2 </div>
+      <img src="2.jpg" style="width:1400px;height: 500px;">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)"><</a>
+        <a class="next" onclick="plusSlides(1)">></a>
+   
+    </div>
+    </div>
+  </div>
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  </script> <br><br> 
+
+     
+<center>
+  <h2>Doctor's Hospital helps you get well, Sooner!</h2>
+  <p> for the best specialists or medical services and pick a suitable time slot and book instantly with a few clicks</p>
+</center><br><br><br>
+
+<div class="card">
+    
+    <div class="container"><br>
+      <img src="01.search-doctors.png"><br>
+      <h4><b>Search Doctor, 24/7</b></h4> 
+      <p>No waiting, no hold music. <br>
+        Our platform is available round-the-clock</p>
+    </div>
+    <div class="container"><br>
+        <img src="02.best-practice.png">
+        <h4><b>Choose Best Practice</b></h4> 
+        <p>Decide based on doctor location,<br>
+          schedule and verified patient review</p>
+        </div>
+        <div class="container"><br>
+            <img src="03.book-appointment.png">
+            <h4><b>Book Appointment</b></h4> 
+            <p>Choose the most convenient time and 
+              <br> book with a click</p>
+            </div>
+  </div>
+            <br><br><br><br><br><br><br><br>
+  <div class="row">
+      <div class="column" style="margin-right:10px;margin-top: 40px;color: black;">
+    <center>
+       
+      <br><h2>Instant appointment<br><br> with doctors. Guaranteed.</h2>
+        <p style="color: rgba(0, 0, 0, 0.582);"> Find nearby doctors in specialties you need<br><br>
+            Book appointments using a simple mobile workflow<br><br>
+            Make informed decisions based on real patient reviews<br><br>
+            Get notified via SMS or E-Mail<br><br>
+             <a href="About Us.html" class="button">Read More</a></p>
+        </center>
+      </div>
+      <div class="column" style="background-image: url('doc.png');margin-top:20px;width: 40%;">
+      </div>
+    </div><br><br><br><br><br><br><br><br>
+    <div class="row">
+        <div class="column" style="margin-right:10px;margin-top: 40px;color: black;">
+            <div class="column" style="background-image: url('sli.png');margin-top:20px;width: 40%;">
+              </div>
+      <center>
+         <br><br>
+        <br><h2>Leading Healthcare Providers.<br> <br>Trust us for Business.</h2>
+          <p style="color: rgba(0, 0, 0, 0.582);"> Create Online Presence<br><br>
+            Manage Appointments<br><br>
+            Manage Patient Records<br><br>
+            Manage Billing & Invoicing</p>
+          </center>
+        </div>
+      </div><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+      <div class="cardd">
+    
+          <div class="container"><br>
+            <img src="people-group-01.png"><br>
+          </div>
+          <div class="container"><br>
+            <h2>Join thousands of patients who have trusted Docotr's Hospital.
+                Follow our updates by subscribing below.<br><br><br>
+                <a href="getstarted.html" class="button">Book Now</a>
+                
+              </br></h2><br>
+          </div>
+          <div class="container"><br>
+            <img src="people-group-02.png"><br>
+          </div>
+      </div>
+
+
+  <div class="footer" style="margin-top: 90px;">
+               <h5 style="color: white;text-align: center;">2019 Doctors Hospital® Global Inc.</h5>
+       </div><br><br> <br><br><br> <br><br>
+           
+</body>
+</html>

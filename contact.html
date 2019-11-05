@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="stylee.css">
+    <title>Contact Us</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 8px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:black;
+  
+   
+}
+.button {
+         background-color: #1c87c9;
+         border: none;
+         color: white;
+         padding: 10px 14px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 20px;
+         margin: 4px 2px;
+         cursor: pointer;
+         }
+</style>
+</head>
+<body>
+
+    <a href="Home.html">
+        <img src="icon.png" >
+      </a>
+      <ul>
+       <li><a href="Home.html">Home</a></li>
+       <li><a href="About Us.html">About Us</a>
+       
+       </li>
+       <li><a href="contact.html">Contact Us</a>
+       </li>
+       <li><a href="getstarted.html" class="button">Book Now</a></li>
+      </ul>
+      <br><br>
+</div>
+
+<div class="container">
+  <div style="text-align:center">
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="c.jpg" style="width:85%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="subject">Contact</label>
+        <input type="text" id="subject" name="contact" placeholder="Contact">
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+<br><br><br><br><br>
+
+<body>
+  <div class="footer">
+       
+      <h5 style="color:white;text-align: center;">© 2019 Doctor's Hospital® Global Inc.</h5>
+   </div>
+
+
+</body>
+</html>
